@@ -24,7 +24,7 @@ class FlowPredictor(nn.Module):
             # FIX 1: Changed out_features from 128 to 256 to match the input of the next layer
             nn.Linear(seq_len + 1, 256),
             nn.ReLU(),
-            nn.Linear(256, 256),
+            nn.Linear (256, 256),
             nn.ReLU(),
             nn.Linear(256, seq_len)
         )
